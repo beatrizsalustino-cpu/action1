@@ -5,6 +5,11 @@ import streamlit as st
 import plotly.express as px
 from dotenv import load_dotenv
 from app.collector import collect
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[2]
+sys.path.append(str(ROOT_DIR))
 
 load_dotenv()
 
